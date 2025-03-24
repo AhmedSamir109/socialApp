@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover{
+    background-color: white;
+    color: blue;
+}

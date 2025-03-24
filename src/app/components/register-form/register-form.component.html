@@ -1,0 +1,26 @@
+<div class="row justify-content-center px-5 px-sm-0 my-5">
+    <form class="col-sm-6 border rounded-3 shadow px-4 px-sm-5 py-5" [formGroup]="registerForm" (ngSubmit)="Register(registerForm)">
+      <h2 class="text-center mb-5 fs-1">Register</h2>
+        <div class="mb-3">
+          <input type="text" class="form-control mt-4" formControlName="userName"  placeholder=" Enter your Name" aria-describedby="emailHelp">
+          <p class="text-danger text-center mt-2" *ngIf="registerForm.get('userName')?.touched && registerForm.get('userName')?.getError('required')">this field is required</p>
+        </div>
+
+        <div class="mb-3">
+          <input type="text" class="form-control mt-4"  formControlName="userImg" placeholder="Enter Your Img Url" aria-describedby="emailHelp">
+          <p class="text-danger text-center mt-2" *ngIf="registerForm.get('userImg')?.touched && registerForm.get('userImg')?.getError('required')">this field is required</p>
+        </div>
+
+        <div class="mb-3">
+          <input type="password" class="form-control mt-4" formControlName="userPassword" placeholder="Enter Your Password" >
+          <p class="text-danger text-center mt-2" *ngIf="registerForm.get('userPassword')?.touched && registerForm.get('userPassword')?.getError('required')">this field is required</p>
+        </div>
+       
+        <div class="d-flex flex-column gap-3">            
+            <button type="submit" class="btn btn-outline-primary align-self-center mt-4">Register Now</button>
+            <div class="my-4 text-center">
+               <p> You have an account ? <a href="index.html" class="text-decoration-none" routerLink="/login"> Log in </a></p>
+            </div>
+        </div>        
+      </form>
+</div>

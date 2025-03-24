@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "724647803452",
+      "postContent": "one peice",
+      "postImg": "https://assets-prd.ignimgs.com/2023/06/21/one-piece-movies-in-order-slideshow-cover-1687391663377.jpg",
+      "isLiked": false,
+      "userId": 1,
+      "createdOn": "2025-03-12T21:59:07.453Z",
+      "user": {
+        "id": "1",
+        "userName": "Ahmed",
+        "userImg": "https://cdn.i24news.tv/uploads/64/3c/5e/de/5c/da/92/3b/44/fa/e6/f0/c4/25/fb/a0/643c5ede5cda923b44fae6f0c425fba0.jpg?width=1000",
+        "password": "12345"
+      }
+    },
+    {
+      "id": "899513180614",
+      "postContent": "beautiful view ❤️",
+      "postImg": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/9/m/6/medium-beautifull-nature-wall-picture-photographic-paper-14x20-original-imag6jtasuued8cy.jpeg?q=90&crop=false",
+      "isLiked": false,
+      "userId": 1,
+      "createdOn": "2025-03-12T22:33:53.867Z",
+      "user": {
+        "id": "1",
+        "userName": "Ahmed",
+        "userImg": "https://cdn.i24news.tv/uploads/64/3c/5e/de/5c/da/92/3b/44/fa/e6/f0/c4/25/fb/a0/643c5ede5cda923b44fae6f0c425fba0.jpg?width=1000",
+        "password": "12345"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "Ahmed",
+      "userImg": "https://cdn.i24news.tv/uploads/64/3c/5e/de/5c/da/92/3b/44/fa/e6/f0/c4/25/fb/a0/643c5ede5cda923b44fae6f0c425fba0.jpg?width=1000",
+      "password": "12345"
+    }
+  ]
+}

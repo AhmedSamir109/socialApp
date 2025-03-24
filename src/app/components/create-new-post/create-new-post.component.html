@@ -1,0 +1,40 @@
+<div class="row justify-content-center my-5 px-5 px-sm-0">
+    
+    <form class="col-sm-6 border rounded-3 px-3 px-sm-5 py-5 shadow-sm mt-5" [formGroup]="createPost">
+        
+        @if(!EditMode){
+            <h1 class="mb-5 mt-3 text-center">Create new post</h1>
+        }@else{
+            <h1 class="mb-5 mt-3 text-center">Edit post</h1>
+        }
+        <div class="mb-4">
+            <input type="text" formControlName="postBody" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What's in your mind">
+            <p id="emailHelp" class="text-danger text-center" *ngIf="createPost.get('postBody')?.touched && createPost.get('postBody')?.getError('required')"> this field is requied</p>
+        </div>
+    
+        <div class="mb-4">
+            <input type="text" formControlName="postImg" class="form-control" id="exampleInputPassword1" placeholder="Image Url">
+            <p id="emailHelp" class="text-danger text-center" *ngIf="createPost.get('postImg')?.touched && createPost.get('postImg')?.getError('required')"> this field is requied</p>
+        </div>
+        
+        @if(EditMode){
+
+            <img [src]="createPost.value.postImg" class="w-100 rounded-3 mb-2" alt="">
+        }
+        
+    
+        <div class="d-flex flex-column align-items-center w-100">
+    
+            @if(!EditMode)
+            {
+                <button type="submit" class="btn btn-primary w-25 my-2" (click)="AddPostForm(createPost)">post</button>
+            }@else {
+                <button type="submit" class="btn btn-primary w-25 my-2" (click)="EditPost(createPost)">Edit</button>
+            }
+
+            <button class="btn btn-outline-primary w-50 my-2" routerLink="/posts" >Back To Home</button>
+            
+        </div>
+    
+    </form>
+</div>

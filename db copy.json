@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": "724647803452",
+      "postContent": "Nature ❤️😍",
+      "postImg": "https://static.vecteezy.com/system/resources/thumbnails/050/441/848/small/serene-rolling-green-hills-under-blue-sky-nature-landscape-for-printing-posters-backgrounds-photo.jpg",
+      "isLiked": false,
+      "userId": 1,
+      "createdOn": "2025-03-08T16:47:31.108Z",
+      "user": {
+        "id": "1",
+        "userName": "Ahmed",
+        "userImg": "../../assets/4.jpeg",
+        "password": "12345"
+      }
+    },
+    {
+      "id": "899513180614",
+      "postContent": "boats",
+      "postImg": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/9/m/6/medium-beautifull-nature-wall-picture-photographic-paper-14x20-original-imag6jtasuued8cy.jpeg?q=90&crop=false",
+      "isLiked": false,
+      "userId": 1,
+      "createdOn": "2025-03-08T12:13:04.482Z"
+    },
+    {
+      "id": "625280600068",
+      "postContent": "home",
+      "postImg": "https://cdn.shopify.com/s/files/1/0625/3818/6989/files/21_ee15c719-4e2b-4e9e-8498-ad89f32c1dab.jpg?v=1677318249",
+      "isLiked": false,
+      "userId": 2,
+      "createdOn": "2025-03-08T12:14:37.002Z"
+    },
+    {
+      "id": "1050083424644",
+      "postContent": "Moon",
+      "postImg": "https://i.pinimg.com/474x/1e/14/70/1e1470fb0bb4b6522ea51c02f9352d2c.jpg",
+      "isLiked": false,
+      "userId": 2,
+      "createdOn": "2025-03-09T00:31:04.039Z"
+    },
+    {
+      "id": "974788407175",
+      "postContent": "Moon",
+      "postImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hJTA2CbfRCRVqDsiLdKHhK9rWjqeeoGpUw&s",
+      "isLiked": true,
+      "userId": 2,
+      "createdOn": "2025-03-10T20:35:26.217Z",
+      "user": {
+        "id": "2",
+        "userName": "Ahmed samir",
+        "userImg": "https://img.freepik.com/free-photo/beautiful-selective-focus-shot-crystal-ball-reflecting-breathtaking-sunset_181624-8579.jpg",
+        "password": "123456"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userName": "Ahmed",
+      "userImg": "../../assets/4.jpeg",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "userName": "Ahmed samir",
+      "userImg": "https://img.freepik.com/free-photo/beautiful-selective-focus-shot-crystal-ball-reflecting-breathtaking-sunset_181624-8579.jpg",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "userName": "Samir",
+      "userImg": "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpg",
+      "password": "12345"
+    },
+    {
+      "id": "4",
+      "userName": "Abdo",
+      "userImg": "https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6557420216a456cfaef685c0_6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpg",
+      "password": "12345"
+    }
+  ]
+}

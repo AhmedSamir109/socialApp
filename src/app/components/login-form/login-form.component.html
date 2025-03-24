@@ -1,0 +1,27 @@
+<div class="row justify-content-center px-5 px-sm-0">
+    <form class="col-sm-6 border rounded-3 shadow px-4 px-sm-5 py-5" [formGroup]="loginForm">
+      <h2 class="text-center fs-1 mb-5">Login</h2>
+        <div class="mb-3">
+          <label for="userName" class="form-label">User Name</label>
+          <input type="text" formControlName="userName" class="form-control" id="userName" aria-describedby="emailHelp" >
+          <p class="text-center text-danger" *ngIf="loginForm.get('userName')?.touched && loginForm.get('userName')?.getError('required')">this field is required</p>
+        </div>
+
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" formControlName="userPassword" class="form-control" id="pass">
+          <p class="text-center text-danger" *ngIf="loginForm.get('userPassword')?.touched && loginForm.get('userPassword')?.getError('required')">this field is required</p>        
+        </div>
+
+        @if(error) {
+          <p class="text-center text-danger my-4">{{error}}</p>
+        }
+       
+        <div class="d-flex flex-column gap-3">
+            <button type="submit" class="btn btn-primary align-self-center mt-4" (click)="login(loginForm)">Login</button>
+            <div class="my-4 text-center">
+              <p>Don't have an account ? <a href="register.html" class="text-decoration-none" routerLink="/register">create an account</a></p>
+            </div>      
+        </div>        
+      </form>
+</div>

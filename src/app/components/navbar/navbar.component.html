@@ -1,0 +1,57 @@
+<nav
+    class="navbar navbar-expand-sm navbar-light nav-bg rounded-bottom-2 "
+>
+    <div class="container">
+        <a class="navbar-brand fs-3 text-primary fw-bold">Social App</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            @if(loggedUser){
+
+                <ul class="navbar-nav me-auto ms-auto mt-2 mt-lg-0 mb-3 mb-sm-0 d-flex align-items-center justify-content-center justify-content-sm-start ">
+                    <li class="nav-item mx-2 px-3  mb-3 mb-sm-0 text-primary " routerLink="posts" routerLinkActive="bg-primary  rounded-3 text-light"> <i class="fa-solid fa-house me-1"></i> Home </li>
+                    <li class="nav-item mx-2 px-3  text-primary " routerLink="user-profile/profile" routerLinkActive="bg-primary rounded-3 text-light"> <i class="fa-solid fa-user me-1"></i> Profile </li>
+                </ul>
+
+                <ul class="list-unstyled d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-start gap-4">
+                    
+                    <li class="d-flex gap-2 align-items-center">
+                        <div class="dropdown-center">
+
+                            <img [src]="loggedUser.userImg" class="rounded-circle dropdown-toggle" data-bs-toggle="dropdown"  width="45px" height="45px" alt="">
+
+                            <ul class="dropdown-menu">
+                              <li ><h5 class="pt-2 text-center border-bottom pb-1">{{loggedUser.userName}}</h5></li>
+                              
+                              <li routerLink="user-profile/profile"><a class="dropdown-item" ><i class="fa-solid fa-circle-user me-1 mb-2"></i> View Profile </a></li>
+                              <li routerLink="edit-profile/"><a class="dropdown-item"><i class="fa-solid fa-gear me-1 mb-2"></i> Edit User Profile </a></li>
+                              <li (click)="DeleteAccount(loggedUser.id)"><a class="dropdown-item"><i class="fa-solid fa-circle-minus me-1 mb-2"></i> Remove Account </a></li>
+                            </ul>
+
+                        </div> 
+                    </li>          
+                    <li>
+                        <button class="btn btn-primary" title="log out" routerLink="login" (click)="logout()">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </button>
+                    </li>
+                </ul>
+            }
+            
+        
+        </div>
+    </div>
+</nav>
+
+
+
