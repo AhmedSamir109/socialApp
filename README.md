@@ -2,10 +2,10 @@
 SocialApp is an Angular 17 demo social network that lets users authenticate, view a posts feed, create new posts, browse users, and manage their profile.
 Core flows:
 
-**Auth**: Login and register forms; protected routes via a guard.
-**Posts**: View feed, create new posts, filter out hidden posts with a custom pipe.
-**Users**: List and view users via a dedicated feature area.
-**Profile**: Profile page with a change-password flow in its own module.
+- **Auth**: Login and register forms; protected routes via a guard.
+- **Posts**: View feed, create new posts, filter out hidden posts with a custom pipe.
+- **Users**: List and view users via a dedicated feature area.
+- **Profile**: Profile page with a change-password flow in its own module.
 
 ## Architecture:
 Feature modules: user-profile, change-password, shared UI via shared.
